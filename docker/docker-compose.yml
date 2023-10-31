@@ -1,21 +1,21 @@
-version: '3.8'
+version: '0.1'
 
 services:
   app:
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: programwithgio-app
+    container_name: SimpleIPTVserver
     restart: always
-    working_dir: /var/www/
+    working_dir: /IPTV/
     volumes:
-      - ../src:/var/www
+      - ../src:/IPTV
   nginx:
-    image: nginx:1.19-alpine
-    container_name: programwithgio-nginx
+    image: nginx:latest
+    container_name: SimpleIPTVweb
     restart: always
     ports:
-      - 8000:80
+      - "80:80"
     volumes:
-      - ../src:/var/www
+      - ../src:/IPTV
       - ./nginx:/etc/nginx/conf.d

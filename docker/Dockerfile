@@ -1,10 +1,6 @@
-FROM php:8.0.2-fpm
+FROM php:latest
 
-RUN apt-get update && apt-get install -y \
-    git \
-    curl \
-    zip \
-    vim \
-    unzip
+RUN apt-get update && apt-get install -y git curl zip vim unzip ffmpeg
+RUN --network=host
 
-WORKDIR /var/www
+WORKDIR /IPTV
