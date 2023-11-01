@@ -1,0 +1,11 @@
+What do you want to achieve?
+- web based interface to connect RTSP feeds to m3u8 transport.
+- automatically create and publish m3u index
+- create & monitor output, write to SNMP, status page?
+* copy from VF scripts?
+-- automatically create the status of the service through SNMP? 
+* php-read-SNMP.txt
+---monitor the status of a "service" and update SNMP with it's status.
+* php-write-status.txt
+---specify the "service" when it's created into a list, remove the service when it's deleted.  	
+- status of "channel" and ability to restart/shutdown/start service.

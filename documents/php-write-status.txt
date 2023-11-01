@@ -1,0 +1,31 @@
+<?php
+// SNMP settings
+$hostname = "127.0.0.1"; // Replace with your device's IP or hostname
+$community = "public";   // SNMP community string
+
+// SNMP OID for sysUpTime and sysDescr
+$sysUpTimeOid = "1.3.6.1.2.1.1.3.0";
+$sysDescrOid = "1.3.6.1.2.1.1.1.0";
+
+// Create an SNMP session
+$session = new SNMP(SNMP::VERSION_2C, $hostname, $community);
+
+// Retrieve sysUpTime
+$sysUpTime = $session->get($sysUpTimeOid);
+if ($sysUpTime === false) {
+    echo "Failed to retrieve sysUpTime.";
+} else {
+    echo "System Uptime: " . $sysUpTime . " centiseconds<br>";
+}
+
+// Retrieve sysDescr
+$sysDescr = $session->get($sysDescrOid);
+if ($sysDescr === false) {
+    echo "Failed to retrieve sysDescr.";
+} else {
+    echo "System Description: " . $sysDescr . "<br>";
+}
+
+// Close the SNMP session
+$session->close();
+?>
