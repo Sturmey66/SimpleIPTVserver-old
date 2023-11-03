@@ -1,0 +1,34 @@
+What do I need in the XML?
+https://en.wikipedia.org/wiki/M3U
+
+#EXTINF:-1 
+tvg-id="USAJ2200014K9" \\ optional. if we're not doing a guide, does it need to be here?
+tvg-logo="https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/68/USAJ2200014K9_20201208T081550.png" \\our logo, or the logo of the provider
+group-title="Samsung TV Plus",US | ION Plus  \\ channel title, we need to have this.
+https://live-news-manifest.tubi.video/live-news-manifest/csm/extlive/tubiprd01,ION-Plus.m3u8 \\URL this must be there.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ChannelList>
+  <channel>
+    <tvg-id>USAJ2200014K9</tvg-id>
+    <tvg-logo>https://tvpmlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/70/01/68/USAJ2200014K9_20201208T081550.png</tvg-logo>
+    <group-title>Samsung TV Plus</group-title>
+    <title>US | ION Plus</title>
+    <url>https://live-news-manifest.tubi.video/live-news-manifest/csm/extlive/tubiprd01,ION-Plus.m3u8</url>
+  </channel>
+</ChannelList>
+
+
+
+
+
+How can I read the XML and make the file? 
+
+
+
+Do I version the file, or just export the same name?
+ - leaning toward export the same name every time.
+
+Need to have the public html directory separated from the main folder.
+ - this appears to be in place! double check later....
+
