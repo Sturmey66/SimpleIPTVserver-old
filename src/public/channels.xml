@@ -8,9 +8,13 @@
   </channel>
   <channel>
     <tvg-logo>https://od.lk/s/MF8yMjY0NDYwOTdf/Stirr_Blue_510x510.png</tvg-logo>
-	<group-title>"STIRR TV",STIRR</group-title>
-	<title>Electric Now</title>
-	<url>https://dai.google.com/linear/hls/event/KsvJAc81Qoewj6opYso6Fw/master.m3u8</url>
+    <group-title>"STIRR TV",STIRR</group-title>
+    <title>Electric Now</title>
+    <url>https://dai.google.com/linear/hls/event/KsvJAc81Qoewj6opYso6Fw/master.m3u8</url>
   </channel>
-
+  <channel>
+    <tvg-logo>https://dashradio-files.s3.amazonaws.com/development/icon_logos/229/logos/ec3bfac0-18e4-488b-b2f5-42451fb589e6.png</tvg-logo>
+    <title>Dash Radio | Smooth Jazz Hits</title>
+    <url>https://ice55.securenetsystems.net/DASH44</url>
+  </channel>
 </ChannelList>
