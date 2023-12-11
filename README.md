@@ -1,4 +1,8 @@
 # SimpleIPTVserver
+for various reasons, this repository will no longer exist. It will be deleted by the end of the year 2023.
+
+
+
 Starting the process of building the IPTV server
 
 plan:
